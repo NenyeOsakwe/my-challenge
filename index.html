@@ -1,120 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ice Cream</title>
-    <style>
-    body {
-        font-family: 'Roboto', sans-serif;
-      }
-
-    p {
-         line-height:1.5;
-         font-size:13px;
-         margin: 20px 0 10px;
-}
-
-    h1 {
-         text-align: center;
-         color: black;
-       }
-
-    h2 {
-         text-align: center;
-         border: 1px solid #7d51e8;
-	       padding: 15px;
-	       font-size: 18px;
-	       border-radius: 4px;
-       }
-
-    img {
-         display: block;
-         margin: 0 auto;
-         border-radius: 10px;
-         max-width: 100%;
-       }
-
-    .container {
-         max-width: 600px;
-	       margin: 0 auto;
-	       padding: 15px 60px;
-         display: block;
-         background-color:blue;
-         border-radius: 10px;
-       }
-
-    button {
-         display: block;
-         margin: 20px auto;
-         padding: 15px 20px;
-         background: #7d51e8;
-	       color: white;
-	       font-size: 18px;
-         border: none;
-	       border-radius: 6px;
-	       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-	       transition: all 200ms ease-in-out;
-       }
-    button:hover {
-         opacity: 0.9;
-	       cursor: pointer;
-       }
-
-    .ave {
-         color: #7d51e8;
-	       text-decoration: none;
-	       font-size: 12px;
-       }
-
-    .ave:hover {
-         text-decoration: underline;
-       }
-
-    .big {
-         text-align: center; 
-    }
-
-    .ice {
-        color: rgb(255, 0, 0);
-    }
-    </style>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/app.css">
+  <script src="src/app.js"></script>
 </head>
 <body>
-    <div class="container">
-    <h1>
-        I Love Ice Cream
-    </h1>
-    <h2>
-        Especially Vanilla Ice Cream
-    </h2>
-    <hr />
-    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/032/110/original/R.jpg?1650234950" 
-    width="500px" />
-    <hr />
-    <p>
-    <span class="text"> 
-        <span class="container">     
-         <strong>Vanilla</strong> 
-       is frequently used to flavor ice cream, especially in North America, Asia, and Europe.
-       Vanilla ice cream, like other flavors of ice cream, was originally created by cooling a mixture made of cream, sugar, and vanilla above a container of ice and salt. 
-       The type of vanilla used to flavor ice cream varies by location.
-       In North America and Europe consumers are interested in a more prominent, smoky flavor, while in Ireland they want a more anise-like flavor.
-    </span>
-    </p>
-    <br> 
-    <a href="https://en.wikipedia.org/wiki/Vanilla_ice_cream"
-    target="_blank" class="ave">
-      Read more on Wikipedia  
-    </a>
-    <br> 
-    <p class="big">
-      <button class="buy-button">
-       Try Vanilla Ice Cream Now
-    </button>
-   <div> This page was built by <span class="ice">Osakwe Chinenye</span></div>
-   </p>
+  <div class="container">
+    <h1>Hooray</h1>
+    <i class="fas fa-cloud-sun weather-icon"></i>
+    <i class="fas fa-sun weather-icon"></i>
+    <img src="images/illustration.svg" alt="">
+    <div class="weather-container">
+      <div class="weather-summary">
+        <div class="weather-summary-header">
+          <h1>Lisbon</h1>
+          <div class="weather-detail">
+            Tuesday 3:00 PM
+          </div>
+          <div class="weather-detail">
+            Mostly Sunny
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="clearfix">
+              <img src="images/partly_cloudy.png" alt="" class="weather-icon weather-icon--today">
+              <div class="weather-temperature weather-temperature--today">
+                17
+              </div>
+              <div class="weather-unit weather-unit--today">
+                °C
+              </div>
+              <div class="weather-unit-separator">
+                |
+              </div>
+              <div class="weather-unit weather-unit--today">
+                <a href="#">
+                  °F
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="weather-detail">
+              Precipitation: 0%
+            </div>
+            <div class="weather-detail">
+              Humidity: 65%
+            </div>
+            <div class="weather-detail">
+              Wind: 16 km/h
+            </div>
+            <div class="weather-view-buttons clearfix">
+              <button href="#" class="weather-view-button weather-view-button--temperature weather-view-button--selected">
+                Temperature
+              </button>
+              <button rhef="#" class="weather-view-button weather-view-button--precipitation">
+                Precipitation
+              </button>
+              <button href="#" class="weather-view-button weather-view-button--wind">
+                Wind
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="weather-previews clearfix">
+        <div class="weather-preview weather-preview--selected">
+          <div class="weather-preview-day">
+            Tue
+          </div>
+          <img src="images/sunny.png" alt="" class="weather-preview-image">
+          <div class="weather-preview-temperatures">
+            <span class="weather-preview-temperature weather-preview-temperature--max">
+              18°
+            </span>
+            <span class="weather-preview-temperature weather-preview-temperature--min">
+              11°
+            </span>
+          </div>
+        </div>
+        <div class="weather-preview">
+          <div class="weather-preview-day">
+            Wed
+          </div>
+          <img src="images/sunny.png" alt="" class="weather-preview-image">
+          <div class="weather-preview-temperatures">
+            <span class="weather-preview-temperature weather-preview-temperature--max">
+              21°
+            </span>
+            <span class="weather-preview-temperature weather-preview-temperature--min">
+              12°
+            </span>
+          </div>
+        </div>
+        <div class="weather-preview">
+          <div class="weather-preview-day">
+            Thu
+          </div>
+          <img src="images/partly_cloudy.png" alt="" class="weather-preview-image">
+          <div class="weather-preview-temperatures">
+            <span class="weather-preview-temperature weather-preview-temperature--max">
+              20°
+            </span>
+            <span class="weather-preview-temperature weather-preview-temperature--min">
+              12°
+            </span>
+          </div>
+        </div>
+        <div class="weather-preview">
+          <div class="weather-preview-day">
+            Fri
+          </div>
+          <img src="images/sunny.png" alt="" class="weather-preview-image">
+          <div class="weather-preview-temperatures">
+            <span class="weather-preview-temperature weather-preview-temperature--max">
+              19°
+            </span>
+            <span class="weather-preview-temperature weather-preview-temperature--min">
+              13°
+            </span>
+          </div>
+        </div>
+        <div class="weather-preview">
+          <div class="weather-preview-day">
+            Sat
+          </div>
+          <img src="images/partly_cloudy.png" alt="" class="weather-preview-image">
+          <div class="weather-preview-temperatures">
+            <span class="weather-preview-temperature weather-preview-temperature--max">
+              19°
+            </span>
+            <span class="weather-preview-temperature weather-preview-temperature--min">
+              13°
+            </span>
+          </div>
+        </div>
+        <div class="weather-preview">
+          <div class="weather-preview-day">
+            Sun
+          </div>
+          <img src="images/rain.png" alt="" class="weather-preview-image">
+          <div class="weather-preview-temperatures">
+            <span class="weather-preview-temperature weather-preview-temperature--max">
+              16°
+            </span>
+            <span class="weather-preview-temperature weather-preview-temperature--min">
+              12°
+            </span>
+          </div>
+        </div>
+        <div class="weather-preview">
+          <div class="weather-preview-day">
+            Mon
+          </div>
+          <img src="images/partly_cloudy.png" alt="" class="weather-preview-image">
+          <div class="weather-preview-temperatures">
+            <span class="weather-preview-temperature weather-preview-temperature--max">
+              17°
+            </span>
+            <span class="weather-preview-temperature weather-preview-temperature--min">
+              12°
+            </span>
+          </div>
+        </div>
+        <div class="weather-preview">
+          <div class="weather-preview-day">
+            Tue
+          </div>
+          <img src="images/rain_light.png" alt="" class="weather-preview-image">
+          <div class="weather-preview-temperatures">
+            <span class="weather-preview-temperature weather-preview-temperature--max">
+              16°
+            </span>
+            <span class="weather-preview-temperature weather-preview-temperature--min">
+              12°
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
 </body>
 </html>
