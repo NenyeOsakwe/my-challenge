@@ -5,14 +5,14 @@ function isWindy(speed) {
 //   return speed > 5;
 // }
 
-let lisbonSpeed = 10;
-if (isWindy(lisbonSpeed)) {
+let lagosSpeed = 10;
+if (isWindy(lagosSpeed)) {
   alert('it is windy');
 } else {
   alert('it is not windy');
 }
-// let lisbonSpeed = 10;
-// if (isWindy(lisbonSpeed)) {
+// let lagosSpeed = 10;
+// if (isWindy(lagosSpeed)) {
 //   alert('it is windy');
 // } else {
 //   alert('it is not windy');
